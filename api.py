@@ -13,6 +13,6 @@ def index():
         uppli = json.load(skra)
     return template('index.tpl',uppli)
 
-run(host='localhost',port='8080',debug=True)
+run(host='0.0.0.0',port=argv[1] ,debug=True)
 
 
